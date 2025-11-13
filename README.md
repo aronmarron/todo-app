@@ -1,0 +1,57 @@
+User Manual
+Table of Contents
+Setup Instructions
+Features
+Troubleshooting Tips
+Known Issues
+Setup Instructions
+Prerequisites
+Node.js (version 14 or higher)
+npm (version 6 or higher)
+TypeScript (version 4 or higher)
+Tailwind CSS (version 2 or higher)
+Installation
+Clone the repository using git clone https://github.com/your-username/your-repo-name.git
+Navigate to the project directory using cd your-repo-name
+Install dependencies using npm install or yarn install
+Compile TypeScript code using tsc or npx tsc
+Build Tailwind CSS using npx tailwindcss -i src/styles/input.css -o src/styles/output.css
+Features
+Adding To-Do Items
+Open the application in your web browser.
+Enter a new to-do item in the input field at the bottom of the page.
+Click the "Add" button to add the new to-do item.
+Deleting To-Do Items
+Select the to-do item you want to delete by clicking on it.
+Click the "Delete" button next to the selected to-do item.
+Troubleshooting Tips
+Error Messages
+If you encounter an error message, check the console output for more information.
+Make sure you have installed all dependencies and compiled the TypeScript code correctly.
+Known Issues
+Due to a known issue with Tailwind CSS, some components may not render correctly on older browsers.
+If you experience issues with form submission, try clearing your browser cache or using a different browser.
+API Documentation
+TodoList Component
+Props:
+todos: An array of to-do items (required)
+handleAddTodo: A function to handle adding new to-do items (optional)
+handleDeleteTodo: A function to handle deleting to-do items (optional)
+TodoItem Component
+Props:
+todo: A single to-do item object (required)
+onDelete: A function to handle deleting the to-do item (optional)
+AddTodo Component
+Props:
+onFormSubmit: A function to handle form submission (required)
+newTodoText: The current text in the input field (optional)
+onChange: A function to handle changes to the input field (optional)
+Note: This user manual is a basic guide and may not cover all possible scenarios or edge cases. It's recommended to consult the code documentation and API references for more detailed information.
+
+Changes Made
+
+The user manual has been updated to include the following changes:
+
+Added setup instructions for installing dependencies and compiling TypeScript code.
+Included troubleshooting tips for error messages and known issues with form submission.
+Updated API documentation to reflect the correct props for each component.
